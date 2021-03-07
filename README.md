@@ -27,3 +27,6 @@ http://localhost:8087/metrics
 "averageTime": 6
 }
 
+#note
+Average response time is for general api not for all api.
+
