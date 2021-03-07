@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.FileNotFoundException;
 
-
 @RestController
 @RequestMapping("/metrics")
 public class MetricsController {
 
-
-    public MetricService metricService = new MetricService();
+    @Autowired
+    public MetricService metricService;
 
     @GetMapping
     public  ResponseEntity<Metric> getMetricsData() throws FileNotFoundException {
